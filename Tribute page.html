@@ -1,0 +1,172 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100&display=swap');
+
+.container {
+font-size: 1rem;
+min-height: 300px;
+width: auto;
+background:LightGray;
+display:grid;
+grid-gap: 10px;
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+	"header header header"
+	"content content content"
+	"footer footer footer";
+  text-align: center;
+   align-content:center;
+   justify-content: center;
+display: inline !important;
+}
+
+body {
+font-size: 10px;
+font-family: arial;
+}
+
+  .item1 {
+  	margin:auto;
+    background: LightSkyBlue;
+    grid-area: header;
+	font-family:monospace;	
+	height: auto;
+  }
+
+  .item2 {
+
+    background: LightSalmon;
+    grid-area: header;
+		    display:grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .item3 {
+
+    background: PaleTurquoise;
+    grid-area: content;
+	  margin:auto;
+  }
+
+  .item4 {
+    background: lightpink;
+    grid-area: footer;
+    display:inline;
+  }
+
+  #title {
+  	display:grid;
+	text-align: center;	
+  background: LightGray;
+	font-size: 50px;
+  margin: auto;
+  }
+  
+  .itemTwo {
+    background: LightGray;
+	font-size: 75%;	
+  display:grid;
+    justify-content: center;
+    align-content: center;
+
+  }  
+  
+  .itemThree {
+    background: PaleGreen;
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    padding:10px 10px 10px 10px;
+    font-size: larger;
+    margin:auto;
+      }
+
+  #tribute-info {
+    background: BlanchedAlmond;
+    display:block;
+    margin:auto;
+    align-content: center;
+
+  }
+
+  #img-div {
+  background: white;
+  width: auto;
+  padding: 20px 20px 15px 20px;
+  font-size: 75%;
+  }
+ 
+ #image {
+  display:block;
+	height: auto;
+  margin:auto;
+  max-height: 100%;
+  max-width: 100%;
+  background-color: white;
+ }
+ #img-caption {
+   display:grid;
+   align-content:center;
+   justify-content: center;
+ }
+
+ #tribute-link:hover {
+  color:blue;
+
+ }
+ ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+ li {
+  margin: 16px 0;
+}
+
+b {
+    display:inline !important;
+}
+
+</style>
+
+
+<!DOCTYPE html>
+<html id="main"></html>
+<div class="container">
+<div class="item1">
+<div id="title">Sir Sean Connery</div>
+<div class="itemTwo">Shaken, not stirred</div>
+</div>
+  <div class="item3">
+  <div id="img-div">
+  <img src="https://wallpapercave.com/wp/wp2238794.jpg" id="image" alt="Sean Connery Wallpaper where his is shown as James Bond">
+  <figcaption id="img-caption">Sean Connery's most iconic role - James Bond</figcaption>
+</div> 
+
+<div class="itemThree"><b>Here's a time line of Sir Sean Connery's achievements:</b></div>
+<ul>
+  <li>  <div id="tribute-info"><b>1930 </b>- Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+	<li>  <div id="tribute-info"><b>1946</b> - Joined the Royal Navy, during which time he acquired two tattoos</div></li>
+  <li>  <div id="tribute-info"><b>1953</b> - helped out backstage at the King's Theatre</div></li>
+  <li>  <div id="tribute-info"><b>1956</b> - First met Michael Caine at a party</div></li>
+  <li>  <div id="tribute-info"><b>1959</b> - Won a brief part as a boxer in the TV series The Square Ring</div></li>
+  <li>  <div id="tribute-info"><b>1962</b> - Hired agent Richard Hatton who got him his first film role, as Spike, a minor gangster</div></li>
+  <li>  <div id="tribute-info"><b>1965</b> - Landed a leading role in director Robert Stevenson's Walt Disney Productions film Darby O'Gill and the Little People (1959)</div></li>
+  <li>  <div id="tribute-info"><b>1971</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1972</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1974</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1975</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1983</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1987</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1989</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1993</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+  <li>  <div id="tribute-info"><b>1997</b> - Sean Connery is born in Fountainbridge, Edinburgh</div></li>
+</ul>   
+	<div class="item4">To read more about Sean Connery and his lifetime achievements, please refer to <a href="https://www.imdb.com/name/nm0000125/" id="tribute-link" target="_blank">his dedicated imdb page</a></div>	
+  </div>
+
+</div>
+</html>

@@ -1,0 +1,161 @@
+<style>
+
+.container {
+    font-family: Arial;
+    background: LightGray;
+    display: grid;
+    max-width: 100%;
+    min-height: 100%;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 20px 20px auto;
+    grid-template-areas: 
+    "header header header"
+    "explanation explanation explanation"
+    "form form form";
+    padding-left: 50px;
+}
+
+#title {
+    display:grid;
+    max-width: max-content;
+    margin: auto;
+    grid-area: header;
+    height: auto;
+
+}
+
+#description {
+    display:grid;
+    margin: auto;
+    grid-area: explanation;
+    font-size: 75%;
+    font-style: italic;
+    margin-top: 1rem;
+
+}
+
+#survey-form {
+    background-color: khaki;
+    display:grid;
+    margin:auto;
+    float: initial;
+    vertical-align:top;
+    grid-area: form;
+    width: 30%;
+    min-widh
+    padding: 10px 10px 10px 10x;
+}
+
+#name {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+#email {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+#number {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+#profession {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+#recommend {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#favorite {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#change {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+label {
+    padding: 10px 0 10px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#question {
+    display:grid;
+    padding: 10px 0 10px 5px;
+}
+
+#survey-input-comment {
+    width: 30%;
+    text-align:initial;
+}
+
+#inline {
+    display:inline-block;
+    padding-left: 10px;
+}
+
+#submit {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin:auto;
+    margin-top: 10px;
+    background-color: lightblue;
+}
+
+</style>
+
+
+<div class="container">
+<h1 id="title"> Job Satisfaction Survey </h1>
+<p id="description">National survey to understand how much you like your job</p>
+<form id="survey-form">
+<label id="name-label">Name</label>
+<input type="text" placeholder="Enter your name" id="name" required>
+<label id="email-label">E-mail</label>
+<input type="email" placeholder="Enter your E-mail" id="email" pattern="+@+" size="30" required>
+<label id="number-label">Age</label>
+<input type="number" placeholder="Enter your age" id="number" min="1" max="99" required>
+<label id="prof-label">Profession</label>
+<input type="text" placeholder="Enter your profession" id="profession" required>
+<label id="recommend-label">Would you recommend your profession to your friends?</label>
+
+<div><input type="radio" value="Yes" id="survey-input-boolean" name="recommend" >Yes
+<input type="radio"  value="No" id="survey-input-boolean" name="recommend">No</div>
+
+<label id="favorite">What are your favorite things about your job?</label>
+<div id="inline">
+<input type="checkbox" id="fav1" name="fav1" value="Colleagues">
+<label for="vehicle1"> Colleagues</label>
+</div><div id="inline">
+<input type="checkbox" id="fav2" name="fav2" value="Money">
+<label for="vehicle2"> Money</label>
+</div><div id="inline">
+<input type="checkbox" id="fav3" name="fav3" value="Challenge">
+<label for="vehicle3"> Challenging environment and learning opportunities</label>
+</div>
+<label for="workplace">What type of company do you work at:</label>
+<select name="workplace" id="dropdown" >
+  <option value="Huge">300+ employees</option>
+  <option value="Large">100 - 300 employees</option>
+  <option value="Medium">10 - 100 employees</option>
+  <option value="Small">less than 10 employees</option>
+</select>
+<label id="change">What would you change about your job?</label>
+<textarea type="text" placeholder="Enter your comment" id="change" style="height: 100px; width: 500px"></textarea>
+<input type="submit" id="submit">
+
+</form>
+</div>
