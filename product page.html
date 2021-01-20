@@ -1,83 +1,116 @@
+<!-- HELLO -->
 <style>
+
+.container {
+    font-family: arial;
+    background: darkgray;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-rows: 120px 120px auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "form form form"
+    "video video video"
+    "content content content"
+    "footer footer footer";
+    height: 200%;
+    width: 100%;
+}
 
 #header {
   position: fixed;
   top: 0;
   min-height: 75px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #eee;
+  background-color: darkgray;
 
 }
 
-.container {
-    font-family: -apple-system, BlinkMacSystemFont, arial;
-    background: darkgray;
-    width: 100%;
+
+.nav-bar {
+    height: 100px;
+    left: 0;
+
 }
 
 #header-img {
-    display: inline-block;
     width: 100px;
-
-}
-
-#nav-bar {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    height: 80px;
-    position: fixed;
-    left: 0;
-    
+    float: left;
 }
 
 .nav-link {
     margin-top: 10px;
-    padding: 0 150px;
-
+    margin-bottom: 10px;
+    padding: 5px 150px;
 
 }
 
 #navigation {
-    display: flex;
-    text-align:right;
-    float: right;
-    right: 1em;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+#navigation a {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.3s;
+    border: black;
+    height: 25px;
 
 }
 
-nav a {
-  display: inline-block;
-  color: white;
-  font-size: 15px;
-  font-weight: lighter;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-nav a:hover {
+#navigation a:hover {
   color: #B8B8B8;
 }
 
+#video-info {
+    display:grid;
+    grid-area: video;
 
+}
+
+.form {
+    float: inline-start;
+}
+
+#form {
+    float: inline-start;
+    display: grid;
+    grid-area: form;
+    justify-items:flex-start;
+    align-items:flex-start;
+
+}
 
 </style>
 
 <!DOCTYPE html>
 <html class="container">
 <header id="header">
-    <nav id="nav-bar">
+    <nav class="nav-bar">
         <a href="#header-img"><img src="https://cdn-0.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white-429x500.png" id="header-img" alt="Apple logo"></a>
-            <div id="navigation">
-                <a class="nav-link" href="#mac-section">Mac</a>
-                <a class="nav-link" href="#ipad-section">iPad</a>
-                <a class="nav-link" href="#iphone-section">iPhone</a>
-            </div>
+        <div id="navigation">
+
+            <a class="nav-link" href="#mac-section">Mac</a>
+            <a class="nav-link" href="#ipad-section">iPad</a>
+            <a class="nav-link" href="#iphone-section">iPhone</a>
+        </div>
     </nav>
 </header>
-
+<div class="form">
+<form id="form">
+    Please enter your e-mail to sign up to our newsletter
+    <input type="email" id="email" pattern="+@+" required>
+    <input type="submit">
+</form>
+</div>
+<div id="video-info">
+    Just look how cool the new iphone looks: <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MnrJzXM7a6o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+</div>
 
 </html>
