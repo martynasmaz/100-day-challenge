@@ -13,25 +13,32 @@ html {
     min-height: 100vh;
 }
 
-#nav-bar {
+#navbar {
 
     width: auto;
+    min-width: 8%;
     border-right: 3px solid black;
+    
 }
 
-nav ul {
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    list-style-type: none;
-    border: 1px solid black;
-    padding: 10px 10px;
-    text-align: center;
-    margin-right: 10px;
-}
+@media only screen and (min-width: 1370px) and (max-width: 3605px){
+
+    nav ul {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        list-style-type: none;
+        border: 1px solid black;
+        padding: 10px 10px;
+        text-align: center;
+        margin-right: 10px;
+
+            }
+    }
 
 li {
     list-style-type: none;
+
 }
 
 section {
@@ -44,9 +51,20 @@ display: flex;
 flex-direction: column;
 }
 
+a:link {
+  text-decoration: none !important;
+  color: black;
+}
+
+a:visited {
+    color: black;
+}
+
 .main-section {
-
-
+    max-width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 #section-title {
@@ -56,13 +74,50 @@ flex-direction: column;
     margin-left: 25px;
 }
 
-h1 {
-    font-weight:bold ;
-    padding-right: 10px;
-}
+
 
 h2 {
     font-family: fantasy;
+
+}
+
+a:hover {
+    color:blue;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+ul {
+    text-decoration: none;
+}
+
+code {
+    background-color: lightgrey;
+    padding: 15px 10px 15px 10px;
+    margin-left: 50px;
+}
+
+section ul {
+
+    margin-left: 50px;
+}
+
+p {
+    padding-left: 50px;
+}
+
+.fixed {
+    position: fixed;
+    margin: auto;
+}
+
+#nav-link {
+    padding-top: 25px;
+    width: 200px;
+}
+
+.nav-link {
+    
 }
 
 </style>
@@ -74,47 +129,104 @@ h2 {
 <html>
 <body class="container">
 
-<nav id="nav-bar">
-    <h1>Audit Guidelines</h1>
-    <li>
-        <ul>Scope & Strategy</ul>
-        <ul>Execution</ul>
-        <ul>???</ul>
-        <ul>Money</ul>
-        <ul>Conclusion</ul>
+<nav id="navbar">
+    <header><h1 class="fixed">Audit Guidelines</h1></header>
+    <li class="fixed" id="nav-link">
+        <ul><a href="#Scope_&_Strategy" class="nav-link">Scope & Strategy</a></ul>
+        <ul><a href="#Execution" class="nav-link">Execution</a></ul>
+        <ul><a href="#???" class="nav-link">???</a></ul>
+        <ul><a href="#Money" class="nav-link">Money</a></ul>
+        <ul><a href="#Conclusion" class="nav-link">Conclusion</a></ul>
 
     </li>
 
 </nav>
 
 <main id="main-doc">
-    <section class="main-section" id="Scope_&_Strategy">
-        <h2 id="section-title"> Scope & Strategy</h2>
-        
+
+
+    <section class="main-section" id="Scope_&_Strategy">   
+        <header><h2 id="section-title">Scope & Strategy</h2></header>             
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+        <li>
+            <ul>Turi plana</ul>
+            <ul>Ivykdai plana</ul>
+            <ul>???</ul>
+            <ul>Gauni babkes</ul>
+        </li>
+        <code>Facilisi etiam dignissim diam quis enim lobortis scelerisque. Nulla pharetra diam sit amet nisl. A condimentum vitae sapien pellentesque habitant. Elementum nibh tellus molestie nunc non. Duis at consectetur lorem donec. Sit amet consectetur adipiscing elit. </code>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+        <li>
+            <ul>Turi plana</ul>
+            <ul>Ivykdai plana</ul>
+            <ul>???</ul>
+            <ul>Gauni babkes</ul>
+        </li>
+
 
     </section>
 
-    <section class="main-section">
-        <h2 id="section-title"> Execution</h2>
-        
+
+    <section class="main-section" id="Execution">        
+        <header><h2 id="section-title">Execution</h2></header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+        <li>
+            <ul>Turi plana</ul>
+            <ul>Ivykdai plana</ul>
+            <ul>???</ul>
+            <ul>Gauni babkes</ul>
+        </li>
+        <code>Facilisi etiam dignissim diam quis enim lobortis scelerisque. Nulla pharetra diam sit amet nisl. A condimentum vitae sapien pellentesque habitant. Elementum nibh tellus molestie nunc non. Duis at consectetur lorem donec. Sit amet consectetur adipiscing elit. </code>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+
 
     </section>
 
-    <section class="main-section">
-        <h2 id="section-title"> ???</h2>
-        
+
+    <section class="main-section" id="???">        
+        <header><h2 id="section-title">???</h2></header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+        <li>
+            <ul>Turi plana</ul>
+            <ul>Ivykdai plana</ul>
+            <ul>???</ul>
+            <ul>Gauni babkes</ul>
+        </li>
+        <code>Facilisi etiam dignissim diam quis enim lobortis scelerisque. Nulla pharetra diam sit amet nisl. A condimentum vitae sapien pellentesque habitant. Elementum nibh tellus molestie nunc non. Duis at consectetur lorem donec. Sit amet consectetur adipiscing elit. </code>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+
 
     </section>
 
-    <section class="main-section">
-        <h2 id="section-title"> Money</h2>
-        
+
+    <section class="main-section" id="Money">        
+        <header><h2 id="section-title">Money</h2></header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+        <li>
+            <ul>Turi plana</ul>
+            <ul>Ivykdai plana</ul>
+            <ul>???</ul>
+            <ul>Gauni babkes</ul>
+        </li>
+        <code>Facilisi etiam dignissim diam quis enim lobortis scelerisque. Nulla pharetra diam sit amet nisl. A condimentum vitae sapien pellentesque habitant. Elementum nibh tellus molestie nunc non. Duis at consectetur lorem donec. Sit amet consectetur adipiscing elit. </code>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+
 
     </section>
 
-    <section class="main-section">
-        <h2 id="section-title"> Conclusion</h2>
-        
+
+    <section class="main-section" id="Conclusion">        
+        <header><h2 id="section-title"> Conclusion</h2></header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+        <li>
+            <ul>Turi plana</ul>
+            <ul>Ivykdai plana</ul>
+            <ul>???</ul>
+            <ul>Gauni babkes</ul>
+        </li>
+        <code>Facilisi etiam dignissim diam quis enim lobortis scelerisque. Nulla pharetra diam sit amet nisl. A condimentum vitae sapien pellentesque habitant. Elementum nibh tellus molestie nunc non. Duis at consectetur lorem donec. Sit amet consectetur adipiscing elit. </code>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Libero justo laoreet sit amet. Est velit egestas dui id. Auctor neque vitae tempus quam pellentesque nec nam. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Sit amet nisl purus in mollis nunc sed id semper</p>
+
 
     </section>
 </main>
