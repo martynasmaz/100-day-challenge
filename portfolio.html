@@ -1,0 +1,316 @@
+<style>
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+    .container {
+        display:grid;
+        grid-template-columns: repeat(5, 25%);
+        grid-template-rows: auto  auto auto auto;
+        width: 100%;
+        font-family: Arial;
+        background-color: grey;
+        margin-top:-10px;
+        padding-left: -15px;
+
+
+    }
+
+
+.project-tile {
+    object-fit: cover;
+
+}
+
+
+img {
+    display:inline-block;
+  width: 250px;
+  height: 350px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+
+#navbar {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 2;
+    height: 5%;
+    background-color: grey;
+    width: 100%;
+    height: auto;
+    position: fixed;
+
+}
+
+#welcome-section {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+
+    
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    padding-top: 2%;
+    justify-content: center;
+    background-color: lightgray;
+    row-gap: 15px;
+    justify-items: center;
+    text-align: center;
+}
+
+
+#projects1 {
+    display: inline-block;
+    grid-row: 2;
+
+}
+
+#projects2 {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    display: inline-block;
+    grid-row: 3;
+    padding-top: 10%;
+}
+
+
+
+h1 {
+    font-size: 48;
+    color: white;
+
+}
+
+p {
+    color:crimson;
+    font-style: italic; 
+}
+
+body {
+
+    grid-column: 1 / 5;
+
+}
+
+#navbar li {
+    list-style-type: none;
+    margin-right: 10%;
+    text-align: center;
+}
+
+#navbar ul {
+    margin-top: 15px;
+    margin-right: 15px;
+    float:right;
+    color: White;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+#project-title {
+    color: black;
+    font-style: normal;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    margin-top: -1px;
+    font-size: 25;
+    padding: 5px;
+}
+
+#projects h2 {
+    text-align: center;
+    grid-column: 2 / 5;
+    font-size: 50;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    padding-top: 2%;
+    background-color: grey;
+    row-gap: 15px;
+    padding-bottom: 48%;
+
+}
+
+#contact-text {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    grid-column: 2 / 5;
+    font-size: 50;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#links {
+    grid-column: 3 / 4;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    text-justify:auto;
+
+}
+
+.contacts img {
+    padding-top: 0px;
+    height:15px;
+    width: 15px;
+    border: none;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+#contacts {
+    height: 100%;
+}
+
+li {
+    display: inline;
+    grid-column: 2/3;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    width: auto;
+    margin-right: 0;
+    padding-right: 25px;
+    margin: auto;
+
+}
+
+</style>
+
+
+<!DOCTYPE html>
+<html class="container">
+
+        <nav id="navbar">
+            <li>
+                <ul><a href="#Contacts">Contacts</a></ul>
+                <ul><a href="#projects">Work</a></ul>
+                <ul><a href="#welcome-section">About</a></ul>
+            </li>
+        </nav>
+
+                <section id="welcome-section">
+                    <h1>Hello, my name is Martynas</h1>
+                    <p>I am learning to code</p>
+                </section>
+
+    <section id="projects">
+        <h2><u>These are some of my projects</u></h2>
+        <section id="projects1">
+
+        </section>
+        <section id="projects1">
+            <div>
+                <a href="https://github.com/martynasmaz/100-day-challenge/blob/master/Tribute%20page.html">
+                    <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
+                    <p id="project-title">Project Title</p>
+                </a>
+            </div>
+        </section>
+        <section id="projects1">
+            <div >
+                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
+                <p id="project-title">Project Title</p>
+            </div>
+        </section>
+        <section id="projects1">
+            <div >
+                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
+                <p id="project-title">Project Title</p>
+            </div>
+        </section>
+        <section id="projects2">
+
+        </section>
+        <section id="projects2">
+            <div >
+                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
+                <p id="project-title">Project Title</p>
+            </div>
+        </section>
+        <section id="projects2">
+            <div>
+                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
+                <p id="project-title">Project Title</p>
+            </div>
+        </section>
+        <section id="projects2">
+            <div>
+                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
+                <p id="project-title">Project Title</p>
+            </div>
+        </section>
+    </section>
+
+    <section class="contacts" id="Contacts">
+        <h2 id="contact-text">Let's work together</h2>
+            <div id="links"> 
+                <li>
+                    <ul>            <a href="https://github.com/martynasmaz" id="profile-link" target="_blank">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHUb logo">GitHub</a>
+                    </ul>
+                    <ul>            <a href="https://github.com/martynasmaz">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHUb logo">GitHub</a>
+                    </ul>
+                    <ul>            <a href="https://github.com/martynasmaz">
+                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHUb logo">GitHub</a>
+                    </ul>
+                </li>
+            </div>
+            
+    </section>
+
+
+</html>
