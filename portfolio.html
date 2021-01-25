@@ -24,41 +24,63 @@
         display:grid;
         grid-template-columns: repeat(5, 25%);
         grid-template-rows: auto  auto auto auto;
-        width: 100%;
+        width: 100vw;
         font-family: Arial;
-        background-color: grey;
-        margin-top:-10px;
-        padding-left: -15px;
+        background-color: #EFD9CE;
+        padding-right: -15px;
+
 
 
     }
 
+* {
+    margin: 0;
 
-.project-tile {
-    object-fit: cover;
-
+    max-width: 100%;
 }
 
 
-img {
-    display:inline-block;
-  width: 250px;
-  height: 350px;
-  padding: 5px;
-  border: 1px solid black;
-}
+
+
+
 
 
 #navbar {
-    display: grid;
-    grid-column: 1 / 5;
-    grid-row: 2;
-    height: 5%;
-    background-color: grey;
-    width: 100%;
-    height: auto;
+    background-color: 957FEF;
+    height: 5vh;
     position: fixed;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 50px;
+}
 
+#navbar li {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+#navbar ul {
+    margin: 1vh 1vh 1vh 1vh;
+    float:right;
+    color: White;
+    font-weight: bold;
+
+    padding: 10px 10px 10px 10px;
+    width: 5vw;
+    min-width: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    color: black;
+    border-top: 5px solid #7161EF;
+    padding-top: 10px;
 }
 
 #welcome-section {
@@ -67,21 +89,54 @@ img {
     justify-content: center;
     align-content: center;
     height: 100vh;
-
-    
+    width: 100vw;
+    max-width: 100%;
 }
 
 #projects {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    padding-top: 2%;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
     justify-content: center;
-    background-color: lightgray;
+    background-color: #DEC0F1;
     row-gap: 15px;
     justify-items: center;
     text-align: center;
+    width: 100vw;
+    max-width: 100%;
+    margin-right: 0;
+    height: 100vh;
+    min-height: 100%;
+    text-align: center;
 }
 
+#project-container {
+    display: grid;
+    max-width: 450px;
+    max-height: 550px;
+    align-content: center;
+    text-align: center;
+
+}
+
+.project-tile {
+    object-fit: cover;
+}
+
+img {
+    display:inline-block;
+    width: 20vh;
+    height: 30vh;
+    padding: 1vh 1vh 1vh 1vh;
+
+}
+
+img:hover {
+    display:inline-block;
+    width: 25vh;
+    height: 35vh;
+    padding: 5px;
+}
 
 #projects1 {
     display: inline-block;
@@ -94,55 +149,9 @@ img {
     margin-bottom: 150px;
     display: inline-block;
     grid-row: 3;
-    padding-top: 10%;
-}
-
-
-
-h1 {
-    font-size: 48;
-    color: white;
 
 }
 
-p {
-    color:crimson;
-    font-style: italic; 
-}
-
-body {
-
-    grid-column: 1 / 5;
-
-}
-
-#navbar li {
-    list-style-type: none;
-    margin-right: 10%;
-    text-align: center;
-}
-
-#navbar ul {
-    margin-top: 15px;
-    margin-right: 15px;
-    float:right;
-    color: White;
-    font-weight: bold;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
-    width: 100px;
-    border-radius: 5px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-
-}
-
-#navbar a:hover {
-    color: black;
-}
 
 #project-title {
     color: black;
@@ -150,29 +159,31 @@ a {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    border: 1px solid black;
     margin-top: -1px;
-    font-size: 25;
-    padding: 5px;
+    font-size: 2vh;
+    padding: 1vh;
+    overflow: hidden;
 }
 
 #projects h2 {
     text-align: center;
     grid-column: 2 / 5;
-    font-size: 50;
+    font-size: 4vh;
     margin-top: 10px;
     margin-bottom: 50px;
-
 
 }
 
 .contacts {
     display: grid;
     grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
     padding-top: 2%;
-    background-color: grey;
+    background-color: #7161EF;
     row-gap: 15px;
-    padding-bottom: 48%;
+    height: 95vh;
+    width: 100vw;
+    max-width: 100%;
 
 }
 
@@ -180,16 +191,27 @@ a {
     color: white;
 }
 
+.contacts h2 {
+    text-align: center;
+    grid-column: 2 / 5;
+    grid-row: 3;
+    font-size: 50;
+
+}
+
 h2 {
     text-align: center;
     grid-column: 2 / 5;
+    grid-row: 1;
     font-size: 50;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
 }
 
 #links {
     grid-column: 3 / 4;
+    grid-row: 4;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     text-align: center;
@@ -206,9 +228,25 @@ h2 {
     padding-bottom: 0;
 }
 
-#contacts {
-    height: 100%;
+
+
+h1 {
+    font-size: 48;
+    color: #B79CED;
+
 }
+
+p {
+    color:#7161EF;
+    font-style: italic; 
+}
+
+body {
+
+    grid-column: 1 / 5;
+
+}
+
 
 li {
     display: inline;
@@ -252,7 +290,7 @@ ul {
 
         </section>
         <section id="projects1">
-            <div>
+            <div id="project-container">
                 <a href="https://github.com/martynasmaz/100-day-challenge/blob/master/Tribute%20page.html">
                     <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
                     <p id="project-title">Project Title</p>
@@ -260,13 +298,13 @@ ul {
             </div>
         </section>
         <section id="projects1">
-            <div >
+            <div id="project-container">
                 <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
                 <p id="project-title">Project Title</p>
             </div>
         </section>
         <section id="projects1">
-            <div >
+            <div id="project-container">
                 <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
                 <p id="project-title">Project Title</p>
             </div>
@@ -275,19 +313,19 @@ ul {
 
         </section>
         <section id="projects2">
-            <div >
+            <div id="project-container">
                 <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
                 <p id="project-title">Project Title</p>
             </div>
         </section>
         <section id="projects2">
-            <div>
+            <div id="project-container">
                 <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
                 <p id="project-title">Project Title</p>
             </div>
         </section>
         <section id="projects2">
-            <div>
+            <div id="project-container">
                 <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
                 <p id="project-title">Project Title</p>
             </div>
