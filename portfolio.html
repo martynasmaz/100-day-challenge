@@ -24,7 +24,7 @@
         display:grid;
         grid-template-columns: repeat(5, 25%);
         grid-template-rows: auto  auto auto auto;
-        width: 100vw;
+        width: 100vmax;
         font-family: Arial;
         background-color: #EFD9CE;
         padding-right: -15px;
@@ -41,15 +41,11 @@
 
 
 
-
-
-
-
 #navbar {
     background-color: 957FEF;
-    height: 5vh;
+    height: 5vmin;
     position: fixed;
-    width: 100vw;
+    width: 100vmax;
     max-width: 100%;
     min-height: 50px;
 }
@@ -57,17 +53,15 @@
 #navbar li {
     list-style-type: none;
     text-align: center;
-
+    float:right;
 }
 
 #navbar ul {
-    margin: 1vh 1vh 1vh 1vh;
-    float:right;
+    margin: 1vmin 1vmin 1vmin 1vmin;
     color: White;
     font-weight: bold;
-
     padding: 10px 10px 10px 10px;
-    width: 5vw;
+    width: 5vmax;
     min-width: 50px;
 
 }
@@ -75,6 +69,7 @@
 a {
     text-decoration: none;
     color: white;
+    
 }
 
 #navbar a:hover {
@@ -88,24 +83,24 @@ a {
     text-align: center;
     justify-content: center;
     align-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100vmin;
+    width: 100vmax;
     max-width: 100%;
 }
 
 #projects {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-rows: 10vmin 40vmin 40vmin 10vmin;
     justify-content: center;
     background-color: #DEC0F1;
     row-gap: 15px;
     justify-items: center;
     text-align: center;
-    width: 100vw;
+    width: 100vmax;
     max-width: 100%;
     margin-right: 0;
-    height: 100vh;
+    height: 100vmin;
     min-height: 100%;
     text-align: center;
 }
@@ -125,17 +120,19 @@ a {
 
 img {
     display:inline-block;
-    width: 20vh;
-    height: 30vh;
-    padding: 1vh 1vh 1vh 1vh;
+    width: 20vmin;
+    height: 30vmin;
+    padding: 1vmin 1vmin 1vmin 1vmin;
+    padding-left: 2vmin;
 
 }
 
 img:hover {
     display:inline-block;
-    width: 25vh;
-    height: 35vh;
+    width: 25vmin;
+    height: 35vmin;
     padding: 5px;
+    padding-left: 2vmin;
 }
 
 #projects1 {
@@ -160,18 +157,18 @@ img:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-top: -1px;
-    font-size: 2vh;
-    padding: 1vh;
+    font-size: 2vmin;
+    padding: 1vmin;
     overflow: hidden;
 }
 
 #projects h2 {
     text-align: center;
     grid-column: 2 / 5;
-    font-size: 4vh;
+    font-size: 4vmin;
     margin-top: 10px;
-    margin-bottom: 50px;
-
+    margin-bottom: 5vmin;
+    padding-top: 5vmin;
 }
 
 .contacts {
@@ -181,8 +178,8 @@ img:hover {
     padding-top: 2%;
     background-color: #7161EF;
     row-gap: 15px;
-    height: 95vh;
-    width: 100vw;
+    height: 95vmin;
+    width: 100vmax;
     max-width: 100%;
 
 }
@@ -273,9 +270,10 @@ ul {
 
         <nav id="navbar">
             <li>
-                <ul><a href="#Contacts">Contacts</a></ul>
-                <ul><a href="#projects">Work</a></ul>
                 <ul><a href="#welcome-section">About</a></ul>
+                <ul><a href="#projects">Work</a></ul>
+                <ul><a href="#Contacts">Contacts</a></ul>
+                <ul><a href="blog.html">Blog</a></ul>
             </li>
         </nav>
 
@@ -293,20 +291,20 @@ ul {
             <div id="project-container">
                 <a href="https://github.com/martynasmaz/100-day-challenge/blob/master/Tribute%20page.html">
                     <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
-                    <p id="project-title">Project Title</p>
+                    <p id="project-title">Tribute Page</p>
                 </a>
             </div>
         </section>
         <section id="projects1">
             <div id="project-container">
-                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
-                <p id="project-title">Project Title</p>
+                <img src="https://i.imgur.com/LihVupS.png" style="object-position: 25% 50%;"class="project-tile" alt="project tile">
+                <p id="project-title">Technical page</p>
             </div>
         </section>
         <section id="projects1">
             <div id="project-container">
-                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
-                <p id="project-title">Project Title</p>
+                <img src="https://i.imgur.com/xBldIav.png" class="project-tile" alt="project tile">
+                <p id="project-title">Product Page</p>
             </div>
         </section>
         <section id="projects2">
@@ -314,20 +312,20 @@ ul {
         </section>
         <section id="projects2">
             <div id="project-container">
-                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
-                <p id="project-title">Project Title</p>
+                <img src="https://i.imgur.com/HF6tU7P.png" style="object-position: 0% 50%;" class="project-tile" alt="project tile">
+                <p id="project-title">Survey page</p>
             </div>
         </section>
         <section id="projects2">
             <div id="project-container">
-                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
-                <p id="project-title">Project Title</p>
+                <img src="https://i.imgur.com/zG8Ahn8.png" class="project-tile" alt="project tile">
+                <p id="project-title">TBD</p>
             </div>
         </section>
         <section id="projects2">
             <div id="project-container">
-                <img src="https://i.imgur.com/PQvYp8y.png" class="project-tile" alt="project tile">
-                <p id="project-title">Project Title</p>
+                <img src="https://i.imgur.com/zG8Ahn8.png" class="project-tile" alt="project tile">
+                <p id="project-title">TBD</p>
             </div>
         </section>
     </section>
